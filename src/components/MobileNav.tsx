@@ -14,7 +14,7 @@ const toggleOpen= ()=> setIsOpen((prev)=> !prev)
 const pathName = usePathname()
 
 useEffect(()=>{
-    if(isOpen) toggleOpen()
+    setIsOpen(false)
 }, [pathName])
 
 const closeOnCurrent= (href: string)=>{
